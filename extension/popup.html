@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .stats {
+      margin: 10px 0;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Dark Pattern Detector</h2>
+  <div class="stats" id="statsContainer">
+    <p>Patterns detected: <span id="patternCount">0</span></p>
+    <p>Confidence avg: <span id="confidenceAvg">0%</span></p>
+  </div>
+  <button id="scanButton">Scan Page</button>
+  <script src="popup.js"></script>
+</body>
+</html>
